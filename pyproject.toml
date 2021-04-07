@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "distinct_colours"
+version = "0.9"
+description = "A distinct colour palette tool"
+license = "MPL-2.0"
+authors = [
+  "Nathaniel J. Smith <njs@pobox.com>",
+  "Stefan van der Walt <stefanv@berkeley.edu>",
+  "Kirill Elagin <kirelagin@serokell.io",
+]
+include = ["examples/*"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.20.2"
+scipy = "^1.6.0"
+matplotlib = "^3.4.1"
+colorspacious = "^1.1.2"
+pyqt5 = "5.15.2"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+viscm = "distinct_colours.__main__:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

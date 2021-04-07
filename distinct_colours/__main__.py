@@ -4,5 +4,11 @@
 # See file LICENSE.txt for license information.
 
 import sys
-from .gui import main
-main(sys.argv[1:])
+from distinct_colours import gui
+
+
+def main():
+  gui.main(sys.argv[1:])
+
+if __name__ == '__main__':
+  main()
